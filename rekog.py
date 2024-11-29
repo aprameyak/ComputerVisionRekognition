@@ -1,8 +1,8 @@
 import boto3
 
 rekognition_client = boto3.client('rekognition')
-bucket_name = 'rekognitioncvbucket'
-image_file = 'dogs.jpeg'
+bucket_name = 'BUCKETNAME'
+image_file = 'FILENAME'
 
 response = rekognition_client.detect_labels(
     Image={
